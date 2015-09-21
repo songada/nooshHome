@@ -30,16 +30,25 @@
     border-left-color:#ffffff;
 }
 .dropdown-submenu.pull-left {
-    float:none;
+    float:none !important;
 }
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left:-100%;
-    margin-left:10px;
-    -webkit-border-radius:6px 0 6px 6px;
-    -moz-border-radius:6px 0 6px 6px;
-    border-radius:6px 0 6px 6px;
+.dropdown-submenu.pull-left>a:after{
+    border: none;
 }
 
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;
+}
+.dropdown-submenu .glyphicon{
+    color: #cccccc;
+    position: absolute;
+    left: 4px;
+    top: 7px!important;
+    font-size: 12px;
+}
+/*
+nh-panel  full name is nooshHome-panel
+*/
 .nh-panel .nh-panel-heading{
     position: relative;
 }
@@ -48,4 +57,16 @@
     top: 0;
     right: 0;
     height: 100%;
+}
+.nh-panel .nh-panel-btn{
+    height: 100%;
+    border: none;
+    font-size: 18px;
+}
+.nh-panel .glyphicon{
+    top: 0;
+    vertical-align: middle;
+}
+.nh-panel .ui-sortable-handle{
+    cursor: move;
 }

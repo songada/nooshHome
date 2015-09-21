@@ -1,24 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css' />
-    <link rel='stylesheet' href='/lib/jquery-ui/themes/base/jquery-ui.min.css' />
-    <link rel='stylesheet' href='/style/site.css' />
-    <link rel='stylesheet' href='/style/style.css' />
-  </head>
-  <body>
-    {{>header}}
+    <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/lib/jquery-ui/themes/base/jquery-ui.min.css'/>
+    <link rel='stylesheet' href='/style/site.css'/>
+    <link rel='stylesheet' href='/style/style.css'/>
+</head>
+<body>
+{{>header}}
 
-    {{{body}}}
+{{{body}}}
 
-    {{>footer}}
-    {{>template}}
-  <script src="/lib/jquery/dist/jquery.min.js"></script>
-  <script src="/lib/jquery-ui/jquery-ui.min.js"></script>
-  <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/lib/underscore/underscore-min.js"></script>
-  <script src="/lib/backbone/backbone.js"></script>
-  <script src="/lib/seajs/dist/sea.js" ></script>
-  </body>
+{{>footer}}
+{{>template}}
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/jquery-ui/jquery-ui.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/lib/underscore/underscore-min.js"></script>
+<script src="/lib/backbone/backbone.js"></script>
+<script src="/lib/seajs/dist/sea-debug.js"></script>
+<script>
+    (function (global) {
+        // Set configuration
+        seajs.config({
+            base: "/app"
+        });
+        //Top namespace is nh
+        var nh = global.nh = {
+            name: "nooshHome",
+            version: "0.0.1",
+            panelSize2Class: {
+                "lg": "col-sm-12 col-mid-12 col-ls-12",
+                "mid": "col-sm-6 col-mid-6 col-ls-6",
+                "sm": "col-sm-4 col-mid-4 col-ls-4"
+            }
+        };
+        /**
+         * loadModule
+         * @param modules
+         * @param after
+         * @param len
+         */
+        nh.loadModule = function (modules) {
+            var
+                    defer = $.Deferred(),
+                    modules = modules || [],
+                    len;
+            if (!_.isArray(modules)) {
+                _.isString(modules) && (modules = {"module": modules});
+                modules = [modules];
+            }
+            len = modules.length;
+            $.each(modules, function (k, m) {
+                _.isFunction(m["before"]) && m["before"]();
+                seajs.use(m["module"], function (mod) {
+                    var args = m["arguments"] || [], initObj;
+                    if (mod && mod.init) {
+                        !_.isArray(args) && (args = [args]);
+                        initObj = mod.init.apply(mod, args);
+                    }
+                    --len || defer.resolve(mod, initObj);
+                });
+            });
+            return defer;
+        };
+
+        nh.loadModule("main");
+
+    })(this);
+
+</script>
+</body>
 </html>

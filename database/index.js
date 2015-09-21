@@ -23,7 +23,7 @@ module.exports = {
             id:1001,
             order:1,
             type:"chart",
-            moduleName:"projectChart",
+            moduleName:"openProjectChart",
             title:"Open Projects",
             size:"mid",
             visible:true
