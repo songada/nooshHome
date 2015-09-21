@@ -1,0 +1,26 @@
+{
+  "name": "NooshHome",
+  "version": "0.0.0",
+  "authors": [
+    "Gavin Li <gavin@noosh.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "bootstrap": "~3.3.5",
+    "html.sortable": "~0.3.0",
+    "jquery": "~2.1.4",
+    "jquery-ui": "jqueryui#~1.11.4",
+    "seajs": "~3.0.0",
+    "spin.js": "~2.3.2",
+    "underscore": "~1.8.3"
+  }
+}

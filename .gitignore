@@ -1,0 +1,49 @@
+# iOS / Apple
+# ===========
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Node and related ecosystem
+# ==========================
+.nodemonignore
+.sass-cache/
+npm-debug.log
+node_modules/
+public/lib
+public/js/app.js
+public/js/app.min.js
+public/js/lib.js
+app/tests/coverage/
+.bower-*/
+.idea/
+
+# MEAN.js app and assets
+# ======================
+access.log
+
+
+# WebStorm
+# ========
+*.iml
+
+# Cloud9 IDE
+# =========
+.c9/
+data/
+mongod
+
+# General
+# =======
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.tmp
+*.bak
+*.swp
+logs/
+build/
