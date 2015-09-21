@@ -40,6 +40,11 @@
                 handle: ".panel-title",
                 helper: "clone",
                revert: true,
+                activate:function(event, ui){
+                    _this.$(".ui-sortable-placeholder").css({
+                        height:ui.item.height()
+                    });
+                },
                 stop:function(){
                     _.delay(function(){
                         _this.$(".panel:visible").each(function(index,panelEl){
