@@ -6,11 +6,12 @@
      * appView
      */
     var appView = Backbone.View.extend({
+        template:$("#message-panel-tpl").html(),
         initialize:function(){
             this.render();
         },
         render:function(){
-            this.$el.append("test--panel body");
+            this.$el.append(this.template);
         }
     });
     return {
