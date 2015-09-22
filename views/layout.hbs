@@ -14,6 +14,7 @@
 
 {{>footer}}
 {{>template}}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="/lib/jquery/dist/jquery.min.js"></script>
 <script src="/lib/jquery-ui/jquery-ui.min.js"></script>
 <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -22,6 +23,7 @@
 <script src="/lib/seajs/dist/sea-debug.js"></script>
 <script>
     (function (global) {
+        google.load("visualization", "1", {packages:["corechart"]});
         // Set configuration
         seajs.config({
             base: "/app"

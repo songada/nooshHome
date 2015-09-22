@@ -354,7 +354,6 @@ ul.home-task-list li {
 .home-project-list-ul > div:nth-child(2n) {
     background-color: #f1f1f1;
 }
-
 .home-project-list-ul > div + div {
     z-index: 0;
 }
@@ -952,6 +951,53 @@ ul.home-task-list li {
 .glb-wdgt > .glb-wdgt-wrap > .glb-wdgt-hd > .glb-wdgt-title{
     float: left;
 }
+ .glb-wdgt-hd-dropdown{
+    color: #fff;
+    float: right;
+    margin-bottom: -10px;
+    margin-right: 32px;
+    margin-top: -10px;
+    padding: 10px 20px 10px 5px;
+    width: auto;
+    position: relative;
+}
+.glb-wdgt-hd-dropdown:hover{
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: #000;
+}
+.glb-wdgt-hd-dropdown > .glb-wdgt-dropdown-list{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #fff;
+    left: -1px;
+    position: absolute;
+    top: 37px;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+.glb-wdgt-hd-dropdown > .glb-wdgt-dropdown-list > li{
+    padding: 5px;
+    color: #000;
+}
+ .glb-wdgt-hd-dropdown > .glb-wdgt-dropdown-list > li:hover{
+    background-color: #7293d6;
+    color: #fff;
+}
+ .glb-wdgt-hd-dropdown:hover > .glb-wdgt-dropdown-list{
+    display: block;
+}
+ .glb-wdgt-hd-dropdown > .glb-carrot{
+    border-color: transparent transparent transparent #ffffff;
+    left: auto;
+    right: 7px;
+    top: 15px;
+    transform: rotate(90deg);
+}
+.glb-wdgt-hd-dropdown:hover > .glb-carrot{
+    border-color: transparent transparent transparent #000;
+}
 .glb-wdgt > .glb-wdgt-wrap > .glb-wdgt-hd > .glb-wdgt-set{
     height: 37px;
     margin-right: 0;
@@ -1282,7 +1328,7 @@ div.glb-msg-reply-box textarea{
 }
 .glb-wdgt-chart{
     display: block;
-    height: auto;
-    margin: 20px auto 0;
+    height: 345px;
+    margin: 0px auto 0;
     width: 100%;
 }
