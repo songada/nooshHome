@@ -13,6 +13,7 @@
             title:"Open Projects",
             size:"sm|md|lg" // sm 4 items in a line,md  2 items in a line ,lg  a item in a line
              visible:true|false,
+             draggable:true|false,
              dataLimit:5 //-1 is show all ,this option is for type:list
 
         }
@@ -26,7 +27,8 @@ module.exports = {
             moduleName:"openProjectChart",
             title:"Open Projects",
             size:"mid",
-            visible:true
+            visible:true,
+            draggable:true
         },
         {
             id:1002,
@@ -35,7 +37,8 @@ module.exports = {
             moduleName:"projectOwnerChart",
             title:"Projects by Owner",
             size:"mid",
-            visible:true
+            visible:true,
+            draggable:true
         },
         {
             id:1003,
@@ -45,6 +48,7 @@ module.exports = {
             title:"Tasks",
             size:"mid",
             visible:true,
+            draggable:true,
             dataLimit:5
         },
         {
@@ -55,6 +59,7 @@ module.exports = {
             title:"Messages",
             size:"mid",
             visible:true,
+            draggable:true,
             dataLimit:5
         },
         {
@@ -65,7 +70,13 @@ module.exports = {
             title:"Hot Projects",
             size:"lg",
             visible:true,
+            draggable:true,
             dataLimit:5
         }
+    ],
+    //todo need to discuss
+    layout:[
+        [],
+        []
     ]
 };
