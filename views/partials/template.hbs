@@ -54,10 +54,15 @@
             <div class="modal-body">
                 <%=content%>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <%if(obj.buttons){%>
+                <div class="modal-footer">
+                    <%_.each(buttons,function(btn,key){%>
+                        <button type="button" class="btn <%-btn.className%>" key="<%-key%>"><%-key%></button>
+                    <%})%>
+                    <!--<button type="button" class="btn btn-default">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+            <%}%>
         </div>
     </div>
 </script>

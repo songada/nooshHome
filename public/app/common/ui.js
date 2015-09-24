@@ -9,7 +9,8 @@
     var
         Model = Backbone.Model,
         View = Backbone.View,
-        Collection = Backbone.Collection;
+        Collection = Backbone.Collection,
+        emptyFn = new Function();
     /**
      * DropdownMenu
      * new DropdownMenu({
@@ -100,7 +101,24 @@
      * Dialog
      */
     var Dialog = View.extend({
-        template:$("#common-dialog-tpl").html()
+        template:$("#common-dialog-tpl").html(),
+        defaultOptions:{
+            title:"",
+            content:""
+        },
+        defaultButtons:{
+            "Close":{
+                className:"btn-default",
+                callback:emptyFn
+            },
+            "Ok":{
+                className:"btn-primary",
+                callback:emptyFn
+            }
+        },
+        initialize: function(){
+
+        }
     });
 
 
