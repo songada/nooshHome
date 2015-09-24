@@ -101,10 +101,19 @@
      * Dialog
      */
     var Dialog = View.extend({
-        template:$("#common-dialog-tpl").html(),
+        template: _.template($("#common-dialog-tpl").html()),
+        events:{
+            "click":function(e){
+                e.stopPropagation();
+            },
+            "click .close":"close"
+        },
         defaultOptions:{
-            title:"",
-            content:""
+            title:"title",
+            content:"",
+            create:emptyFn,
+            hasMark:false,
+            buttons:null
         },
         defaultButtons:{
             "Close":{
@@ -117,6 +126,19 @@
             }
         },
         initialize: function(){
+            this.options = $.extend(true,this.defaultOptions,this.options);
+            this.render();
+        },
+        render: function(){
+            var options = this.options;
+            this.setElement($(this.template(this.options)));
+            this.$el.appendTo(document.body);
+            options.create && options.create.call(this);
+        },
+        close: function(){
+            this.$el.remove();
+        },
+        setPosition: function(x,y){
 
         }
     });
