@@ -112,6 +112,7 @@
             title:"title",
             content:"",
             create:emptyFn,
+            close:emptyFn,
             hasMark:false,
             buttons:null
         },
@@ -125,21 +126,28 @@
                 callback:emptyFn
             }
         },
-        initialize: function(){
-            this.options = $.extend(true,this.defaultOptions,this.options);
+        initialize: function(options){
+            this.options = $.extend(true,this.defaultOptions,options);
             this.render();
         },
         render: function(){
-            var options = this.options;
-            this.setElement($(this.template(this.options)));
+            var
+                options = this.options,
+                $box = $(this.template(this.options));
+            options.hasMark && ($box = $("<div class='modal fade'>").append($box))
+            this.setElement($box);
             this.$el.appendTo(document.body);
             options.create && options.create.call(this);
         },
         close: function(){
             this.$el.remove();
+            this.options.close && this.options.close.call(this);
         },
         setPosition: function(x,y){
-
+            this.$el.css({
+                left:x + "px",
+                top:y + "px"
+            });
         }
     });
 

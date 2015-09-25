@@ -20,7 +20,7 @@
         template: _.template($("#common-panel-tpl").html()),
         //todo
         events:{
-
+            "click .remove-js":"remove"
         },
         initialize:function(){
             this.model.view = this;
@@ -47,6 +47,9 @@
             }).then(function(subModule,subApp){
                 _this.subApp = subApp;
             });
+        },
+        remove: function(){
+            this.$el.remove();
         }
     });
     return {
