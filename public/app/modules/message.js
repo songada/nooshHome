@@ -25,6 +25,7 @@
                 _this = this;
             if(!this.dialog){
                 this.dialog = new ui.Dialog({
+                    hasMark:false,
                     title:"Replay",
                     content:"<div><textarea style='width:100%; ' cols='4' placeholder='Write Replay...'></textarea></div><div><button class='btn btn-primary' style='width: 100%'>Replay</button></div>",
                     create: function(){

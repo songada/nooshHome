@@ -134,13 +134,16 @@
             var
                 options = this.options,
                 $box = $(this.template(this.options));
-            options.hasMark && ($box = $("<div class='modal fade'>").append($box))
             this.setElement($box);
+            this.mark = $("<div class='modal-backdrop fade in'>");
             this.$el.appendTo(document.body);
+            options.hasMark && this.mark.appendTo(document.body);
+            this.$el.css("zIndex",10000);
             options.create && options.create.call(this);
         },
         close: function(){
             this.$el.remove();
+            this.mark.remove();
             this.options.close && this.options.close.call(this);
         },
         setPosition: function(x,y){
