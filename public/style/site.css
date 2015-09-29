@@ -13,18 +13,6 @@ ul{
 input, textarea{
     border: 1px solid #dfdfdf;
 }
-a, img, fieldset, div, span, ul, li{
-    border: 0px;
-    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
-    vertical-align: middle;
-}
-a, a:visited, a:hover, a:active, a:focus {
-    border: medium none;
-    cursor: pointer;
-    outline: medium none;
-    text-decoration: none;
-    color: inherit;
-}
 a img {
     border: medium none;
 }
@@ -105,7 +93,7 @@ fieldset {
     width: 0;
 }
 .glb-nmh-icon{
-    background-image: url("images/icons/icon_set_ba.png");
+    background-image: url("/images/icon_set_ba.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 27px;
@@ -184,6 +172,15 @@ fieldset {
     background-position: -56px -106px;
     width: 9px;
     height: 15px;
+}
+.glb-nmh-icon-draggable-gray{
+    background-position: -175px -171px;
+}
+.glb-nmh-icon-draggable-white{
+    background-position: -220px -171px;
+}
+.glb-nmh-icon-draggable-arrow-white{
+    background-position: 3px -174px;
 }
 .sp-head {
     margin: auto;
@@ -528,16 +525,16 @@ ul.home-task-list li {
     background-color: #7392d6;
 }
 .glb-add > div{
-    background-image: url("images/icons/icon-plus-gray.png");
+    background-image: url("/images/icon-plus-gray.png");
     background-position: 10px 10px;
     background-repeat: no-repeat;
     cursor: pointer;
-    height: 27px;
+    height: 37px;
     padding: 5px;
-    width: 27px;
+    width: 37px;
 }
 .glb-add > div:hover{
-    background-image: url("images/icons/icon-plus-white.png");
+    background-image: url("/images/icon-plus-white.png");
 }
 .glb-add:hover > .glb-add-menu{
     display: block;
@@ -587,11 +584,11 @@ ul.home-task-list li {
 .glb-nmh-menu ul li.glb-nmh-static > input{
     display: table-cell;
     vertical-align: middle;
-    height: 25px;
+    height: 27px;
     font-size: 14px;
 }
 .glb-nmh-menu ul li.glb-nmh-static > .glb-nmh-icon{
-    background-image: url("images/icons/icon_set_ba.png");
+    background-image: url("/images//icon_set_ba.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 27px;
@@ -637,16 +634,16 @@ ul.home-task-list li {
     background-color: #7392d6;
 }
 .glb-nmh-menu ul li.glb-nmh-settings > .glb-nmh-icon-cog-gray{
-    background-image: url("images/icons/icon-cog-gray.png");
+    background-image: url("/images/icon-cog-gray.png");
     background-position: 9px 10px;
     background-repeat: no-repeat;
     cursor: pointer;
-    height: 27px;
+    height: 37px;
     padding: 5px;
-    width: 27px;
+    width: 37px;
 }
 .glb-nmh-menu ul li.glb-nmh-settings:hover > .glb-nmh-icon-cog-gray{
-    background-image: url("images/icons/icon-cog-white.png");
+    background-image: url("/images/icon-cog-white.png");
 }
 .glb-nmh-menu ul li.glb-nmh-settings > ul{
     background-color: #fff;
@@ -897,7 +894,7 @@ ul.home-task-list li {
     position: absolute;
     top: 37px;
     z-index: 1;
-    min-width: 141px;
+    min-width: 143px;
     left: 0;
 }
 .glb-ent-menu > li:hover > ul{
@@ -1090,7 +1087,8 @@ ul.home-task-list li {
     position: relative;
 }
  .glb-wdgt-task > li > div:last-child > a > div:hover{
-    background-color: #ccc;
+    background-color: #7293d6;
+     color: #fff;
     cursor: pointer;
 }
  .glb-wdgt-task > li > div:last-child > div{
@@ -1099,7 +1097,8 @@ ul.home-task-list li {
     position: relative;
 }
  .glb-wdgt-task > li > div:last-child > div:hover{
-    background-color: #ccc;
+    background-color: #7293d6;
+    color: #fff;
     cursor: pointer;
 }
  .glb-wdgt-task > li > div:last-child > ul.glb-task-status-list{

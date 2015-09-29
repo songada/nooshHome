@@ -1,3 +1,84 @@
+/** Global **/
+body {
+  line-height: inherit;
+}
+ol,
+ul {
+  margin: 0;
+}
+a,
+img,
+fieldset,
+div,
+span,
+ul,
+li {
+  border: 0px;
+  transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+  vertical-align: middle;
+}
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  border: medium none;
+  cursor: pointer;
+  outline: medium none;
+  text-decoration: none;
+  color: inherit;
+}
+/** End of Global **/
+/** Body Global **/
+.container-fluid {
+  padding: 0;
+}
+/** Panel **/
+.panel-wrap {
+  padding: 20px;
+}
+.panel-wrap .panel-primary {
+  border: none;
+}
+.panel-wrap .panel-primary > .panel-heading {
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 10px 5px;
+}
+.panel-wrap .panel-primary > .panel-heading > .pull-right {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.panel-wrap .panel-primary > .panel-heading > .nh-panel-setting {
+  padding: 5px;
+}
+.panel-wrap .panel-primary > .panel-heading > .nh-panel-setting > div > .glb-nmh-icon {
+  cursor: pointer;
+  display: block;
+}
+.panel-wrap .panel-primary > .panel-heading > .nh-panel-handler {
+  padding: 5px;
+  margin-right: -5px;
+}
+.panel-wrap .panel-primary > .panel-heading > .nh-panel-handler > .glb-nmh-icon {
+  cursor: move;
+}
+.panel-wrap .panel-primary > .panel-heading > .nh-panel-setting:hover {
+  background-color: #7293d6;
+  cursor: pointer;
+}
+.panel-wrap .panel-primary > .panel-heading > .nh-panel-handler:hover {
+  background-color: #7293d6;
+  cursor: move;
+}
+.panel-wrap .panel-primary > .panel-heading > .glb-wdgt-hd-dropdown > .glb-wdgt-dropdown-list {
+  box-sizing: initial;
+}
+.panel-wrap .panel-primary > .panel-body {
+  padding: 0px;
+}
 .panel-one-third-area {
   float: left;
   width: 30%;
