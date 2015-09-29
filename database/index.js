@@ -21,6 +21,16 @@
 module.exports = {
     panels:[
         {
+            id:1000,
+            order:1,
+            type:"chart",
+            moduleName:"mainCharts",
+            title:"",
+            size:"lg",
+            visible:true,
+            draggable:true
+        },
+        {
             id:1001,
             order:1,
             type:"chart",

@@ -12,7 +12,7 @@
             this.render();
         },
         render:function(){
-            this.$el.append("<div style='height: 300px' class='chart-cot'></div>");
+            this.$el.append('<div class="panel-chart panel-one-third-area panel-chart1"></div><div class="panel-chart panel-one-third-area panel-chart2"></div><div class="panel-chart panel-one-third-area panel-chart3"></div>')
         },
         drawChart: function(){
             var data = google.visualization.arrayToDataTable([
@@ -33,8 +33,14 @@
                 }
             };
 
-            var chart = new google.visualization.PieChart(this.$(".chart-cot")[0]);
-            chart.draw(data, options);
+            var chart1 = new google.visualization.PieChart(this.$(".panel-chart1")[0]);
+            chart1.draw(data, options);
+
+            var chart2 = new google.visualization.PieChart(this.$(".panel-chart2")[0]);
+            chart2.draw(data, options);
+
+            var chart3 = new google.visualization.PieChart(this.$(".panel-chart3")[0]);
+            chart3.draw(data, options);
         }
     });
     return {

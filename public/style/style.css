@@ -51,11 +51,12 @@ nh-panel  full name is nooshHome-panel
 */
 .nh-panel .nh-panel-heading{
     position: relative;
+    padding: 0;
 }
 .nh-panel .nh-panel-setting{
-    position: absolute;
+    /*position: absolute;
     top: 0;
-    right: 0;
+    right: 0;*/
     height: 100%;
 }
 .nh-panel .nh-panel-btn{

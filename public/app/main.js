@@ -37,9 +37,10 @@
                 panelList = this.panelList;
             this.$(".panel-title").disableSelection();
             this.$el.sortable({
-                handle: ".panel-title",
+                //handle: ".panel-title",
+                handle: ".nh-panel-handler",
                 helper: "clone",
-               revert: true,
+                revert: true,
                 activate:function(event, ui){
                     _this.$(".ui-sortable-placeholder").css({
                         height:ui.item.height()

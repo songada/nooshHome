@@ -954,9 +954,9 @@ ul.home-task-list li {
  .glb-wdgt-hd-dropdown{
     color: #fff;
     float: right;
-    margin-bottom: -10px;
+    /*margin-bottom: -10px;
     margin-right: 32px;
-    margin-top: -10px;
+    margin-top: -10px;*/
     padding: 10px 20px 10px 5px;
     width: auto;
     position: relative;
