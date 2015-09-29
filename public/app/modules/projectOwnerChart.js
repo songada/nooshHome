@@ -28,7 +28,13 @@ define(function (require) {
                 pieHole: 0.4,
                 animation:{
                     duration: 1000,
-                    easing: 'out',
+                    easing: 'out'
+                },
+                chartArea: {
+                    left: 10,
+                    top: 10,
+                    width: '90%',
+                    height: '90%'
                 }
             };
 

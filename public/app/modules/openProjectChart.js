@@ -30,6 +30,12 @@
                 animation:{
                     duration: 1000,
                     easing: 'out'
+                },
+                chartArea: {
+                    left: 10,
+                    top: 10,
+                    width: '90%',
+                    height: '90%'
                 }
             };
 
