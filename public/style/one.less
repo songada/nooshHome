@@ -18,6 +18,40 @@ a, a:visited, a:hover, a:active, a:focus {
   color: inherit;
 }
 /** End of Global **/
+/** Header Global **/
+.glb-nmh-menu{
+  height: 40px;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  &> ul{
+    color: #fff;
+    display: table;
+    float: right;
+    font-size: 12px;
+    height: 40px;
+    list-style: outside none none;
+    &> li{
+      color: #000;
+      display: table-cell;
+      font-size: 14px;
+      padding: 5px 15px;
+      transition: all 0.2s ease 0s;
+      vertical-align: middle;
+    }
+    &> .glb-nmh-static{
+      padding: 0;
+      &> input{
+        display: table-cell;
+        font-size: 14px;
+        height: 27px;
+        padding-left: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
 /** Body Global **/
 .container-fluid{
   padding: 0;

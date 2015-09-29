@@ -554,40 +554,6 @@ ul.home-task-list li {
     text-align: right;
     width: 100px;
 }
-.glb-nmh-menu {
-    height: 40px;
-    margin-right: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.glb-nmh-menu ul {
-    color: #fff;
-    display: table;
-    float: right;
-    font-size: 12px;
-    height: 40px;
-    list-style: outside none none;
-}
-.glb-nmh-menu ul li {
-    color: #000;
-    display: table-cell;
-    padding: 5px 15px;
-    transition: all 0.2s ease 0s;
-    vertical-align: middle;
-    font-size: 14px;
-}
-.glb-nmh-menu ul li:hover {
-}
-.glb-nmh-menu ul li.glb-nmh-static{
-    padding: 0px;
-}
-.glb-nmh-menu ul li.glb-nmh-static > input{
-    display: table-cell;
-    vertical-align: middle;
-    height: 27px;
-    font-size: 14px;
-}
 .glb-nmh-menu ul li.glb-nmh-static > .glb-nmh-icon{
     background-image: url("/images//icon_set_ba.png");
     background-repeat: no-repeat;
