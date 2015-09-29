@@ -73,6 +73,7 @@ a:focus {
 }
 .panel-wrap .panel-primary {
   border: none;
+  box-shadow: none;
 }
 .panel-wrap .panel-primary > .panel-heading {
   background-color: #666;
