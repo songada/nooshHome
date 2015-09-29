@@ -510,11 +510,12 @@ ul.home-task-list li {
     height: 20px;
     list-style: outside none none;
     vertical-align: middle;
+    padding: 0px 10px;
 }
 .glb-breadcrumbs > div > div{
     display: table-cell;
     font-size: 20px;
-    padding: 10px 20px 0;
+    padding: 10px 15px;
     vertical-align: middle;
 }
 .glb-add{
