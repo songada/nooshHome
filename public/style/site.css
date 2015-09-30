@@ -103,7 +103,7 @@ fieldset {
     background-position: -43px 0;
 }
 .glb-nmh-icon-settings{
-    background-position: 3px -124px;
+    background-position: -220px 1px;
 }
 .glb-nmh-icon-cog-gray{
     background-position: 3px -124px;
@@ -927,8 +927,8 @@ ul.home-task-list li {
 }
 .glb-wdgt-hd-dropdown:hover{
     cursor: pointer;
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #7293d6;
+    color: #fff;
 }
 .glb-wdgt-hd-dropdown > .glb-wdgt-dropdown-list{
     background-color: #fff;

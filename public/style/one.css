@@ -1,6 +1,10 @@
 /** Global **/
+html {
+  background-color: #f1f1f1;
+}
 body {
   line-height: inherit;
+  background-color: transparent;
 }
 ol,
 ul {
@@ -71,48 +75,93 @@ a:focus {
 .panel-wrap {
   padding: 20px;
 }
-.panel-wrap .panel-primary {
+.panel-wrap .panel {
   border: none;
   box-shadow: none;
+  margin: 0px;
 }
-.panel-wrap .panel-primary > .panel-heading {
-  background-color: #666;
-  color: #fff;
+.panel-wrap .panel > .panel-heading {
+  background-color: #fff;
+  color: #000;
   border: none;
   border-radius: 0;
   padding: 10px 5px;
+  font-size: 20px;
+  position: relative;
+  display: table;
+  width: 100%;
 }
-.panel-wrap .panel-primary > .panel-heading > .pull-right {
+.panel-wrap .panel > .panel-heading > .panel-title {
+  color: inherit;
+  display: table-cell;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  vertical-align: middle;
+}
+.panel-wrap .panel > .panel-heading > .pull-right {
   margin-top: -10px;
   margin-bottom: -10px;
 }
-.panel-wrap .panel-primary > .panel-heading > .nh-panel-setting {
-  padding: 5px;
+.panel-wrap .panel > .panel-heading > .nh-panel-setting {
+  padding: 8.5px;
+  opacity: 0.4;
+  transition: opacity 0.2s ease 0s;
 }
-.panel-wrap .panel-primary > .panel-heading > .nh-panel-setting > div > .glb-nmh-icon {
+.panel-wrap .panel > .panel-heading > .nh-panel-setting > div > .glb-nmh-icon {
   cursor: pointer;
   display: block;
 }
-.panel-wrap .panel-primary > .panel-heading > .nh-panel-handler {
-  padding: 5px;
+.panel-wrap .panel > .panel-heading > .nh-panel-handler {
+  padding: 8px;
   margin-right: -5px;
+  opacity: 0.4;
+  transition: opacity 0.2s ease 0s;
 }
-.panel-wrap .panel-primary > .panel-heading > .nh-panel-handler > .glb-nmh-icon {
+.panel-wrap .panel > .panel-heading > .nh-panel-handler > .glb-nmh-icon {
   cursor: move;
 }
-.panel-wrap .panel-primary > .panel-heading > .nh-panel-setting:hover {
+.panel-wrap .panel > .panel-heading > .nh-panel-setting:hover {
   background-color: #7293d6;
   cursor: pointer;
 }
-.panel-wrap .panel-primary > .panel-heading > .nh-panel-handler:hover {
+.panel-wrap .panel > .panel-heading > .nh-panel-setting:hover > .dropdown-toggle > .glb-nmh-icon-settings {
+  background-position: 3px -124px;
+}
+.panel-wrap .panel > .panel-heading > .nh-panel-handler:hover {
   background-color: #7293d6;
   cursor: move;
 }
-.panel-wrap .panel-primary > .panel-heading > .glb-wdgt-hd-dropdown > .glb-wdgt-dropdown-list {
-  box-sizing: initial;
+.panel-wrap .panel > .panel-heading > .nh-panel-handler:hover > .glb-nmh-icon-draggable-gray {
+  background-position: -220px -171px;
 }
-.panel-wrap .panel-primary > .panel-body {
-  padding: 0px;
+.panel-wrap .panel > .panel-heading > .glb-wdgt-hd-dropdown {
+  padding: 13.5px 20px 13.5px 5px;
+  font-size: 14px;
+  color: #666;
+}
+.panel-wrap .panel > .panel-heading > .glb-wdgt-hd-dropdown > .glb-carrot {
+  border-color: transparent transparent transparent #000;
+  top: 20px;
+}
+.panel-wrap .panel > .panel-heading > .glb-wdgt-hd-dropdown > .glb-wdgt-dropdown-list {
+  box-sizing: initial;
+  top: 44px;
+}
+.panel-wrap .panel > .panel-heading > .glb-wdgt-hd-dropdown:hover {
+  color: #fff;
+}
+.panel-wrap .panel > .panel-heading > .glb-wdgt-hd-dropdown:hover > .glb-carrot {
+  border-color: transparent transparent transparent #fff;
+}
+.panel-wrap .panel > .panel-body {
+  padding: 0 5px 5px;
+}
+.panel-wrap:hover > .panel > .panel-heading > .nh-panel-setting {
+  opacity: 1;
+}
+.panel-wrap:hover > .panel > .panel-heading > .nh-panel-handler {
+  opacity: 1;
 }
 .panel-one-third-area {
   float: left;
