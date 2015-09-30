@@ -1,3 +1,87 @@
+/** Start Responsive **/
+@media all and (max-width: 420px) {
+  .sp-head {
+    min-width: auto;
+  }
+  .sp-head .glb-header .glb-bc-location {
+    padding: 0;
+  }
+  .sp-head .glb-header .glb-bc-location > div {
+    padding-left: 5px;
+    padding-right: 0px;
+    font-size: 14px;
+  }
+  .sp-head .glb-ent-top-wrapper {
+    display: none;
+  }
+  .sp-head .sp-head-top-central {
+    border-bottom: 1px solid #ccc;
+    height: 35px;
+  }
+  .sp-head .sp-head-top-central .glb-nmh-logo {
+    display: block;
+    height: 35px;
+    margin-left: 5px;
+    overflow: hidden;
+    padding-left: 0;
+    width: 21px;
+    position: absolute;
+  }
+  .sp-head .sp-head-top-central .glb-nmh-logo > img {
+    display: block;
+    margin-top: -2px;
+    width: 150px;
+  }
+  .sp-head .sp-head-top-central .glb-nmh-menu {
+    display: none;
+  }
+  .sp-head .sp-head-top-central .mbl-menu {
+    display: block;
+    margin-left: 27px;
+    width: auto;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul {
+    height: 35px;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:first-child {
+    height: 100%;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:first-child > .mbl-search {
+    background-position: -39px 6px;
+    box-sizing: initial;
+    float: left;
+    padding: 4px;
+    display: none;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:first-child > input {
+    border: medium none;
+    font-size: 18px;
+    margin-top: 2px;
+    padding: 5px;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child {
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .glb-nmh-icon-nav {
+    background-image: url("/images/icon-mbl-menu.svg");
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+  }
+  .panel-wrap > .panel > .panel-heading > .panel-title {
+    font-size: 14px;
+  }
+  .panel-wrap > .panel > .panel-heading > .nh-panel-setting {
+    display: none;
+  }
+  .panel-wrap > .panel > .panel-heading > .nh-panel-handler {
+    display: none;
+  }
+}
+/** End Responsive **/
 /** Global **/
 html {
   background-color: #f1f1f1;
@@ -66,6 +150,9 @@ a:focus {
   height: 27px;
   padding-left: 5px;
   vertical-align: middle;
+}
+.mbl-menu {
+  display: none;
 }
 /** Body Global **/
 .container-fluid {

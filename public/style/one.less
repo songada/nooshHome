@@ -1,3 +1,96 @@
+/** Start Responsive **/
+@media all and (max-width: 420px) {
+  .sp-head{
+    min-width: auto;
+    .glb-header{
+      .glb-bc-location{
+        padding: 0;
+        &> div{
+          padding-left: 5px;
+          padding-right: 0px;
+          font-size: 14px;
+        }
+      }
+    }
+    .glb-ent-top-wrapper{
+      display: none;
+    }
+    .sp-head-top-central{
+      border-bottom: 1px solid #ccc;
+      height: 35px;
+      .glb-nmh-logo{
+        display: block;
+        height: 35px;
+        margin-left: 5px;
+        overflow: hidden;
+        padding-left: 0;
+        width: 21px;
+        position: absolute;
+        &> img{
+          display: block;
+          margin-top: -2px;
+          width: 150px;
+        }
+      }
+      .glb-nmh-menu{
+        display: none;
+      }
+      .mbl-menu{
+        display: block;
+        margin-left: 27px;
+        width: auto;
+        &> ul{
+          height: 35px;
+          &> li:first-child{
+            height: 100%;
+            &> .mbl-search{
+              background-position: -39px 6px;
+              box-sizing: initial;
+              float: left;
+              padding: 4px;
+              display: none;
+            }
+            &> input{
+              border: medium none;
+              font-size: 18px;
+              margin-top: 2px;
+              padding: 5px;
+            }
+          }
+          &> li:last-child{
+            height: 35px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            &> .glb-nmh-icon-nav{
+              background-image: url("/images/icon-mbl-menu.svg");
+              background-repeat: no-repeat;
+              height: 35px;
+              width: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .panel-wrap{
+    &> .panel{
+      &> .panel-heading{
+        &> .panel-title{
+          font-size: 14px;
+        }
+        &> .nh-panel-setting{
+          display: none;
+        }
+        &> .nh-panel-handler{
+          display: none;
+        }
+      }
+    }
+  }
+}
+/** End Responsive **/
+
 /** Global **/
 html{
   background-color: #f1f1f1;
@@ -55,6 +148,9 @@ a, a:visited, a:hover, a:active, a:focus {
       }
     }
   }
+}
+.mbl-menu{
+  display: none;
 }
 /** Body Global **/
 .container-fluid{
