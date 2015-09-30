@@ -90,6 +90,7 @@
               &> li:first-child{
                 height: auto;
                 padding: 20px;
+                background-color: #fff !important;
                 &> .glb-nmh-icon-close{
                   background-image: url("/images/icon-close-black.svg");
                   background-repeat: no-repeat;
@@ -103,7 +104,44 @@
               }
               &> li{
                 font-size: 16px;
-                padding: 10px 15px;
+                text-align: center;
+                position: relative;
+                &> div{
+                  padding: 10px 15px;
+                }
+                &> ul{
+                  display: none;
+                  border-bottom: 1px solid #ccc;
+                  &> li{
+                    &> a{
+                      padding: 5px;
+                      display: block;
+                    }
+                    &> a:hover{
+                      color: #fff;
+                      background-color: #7293d6;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+              &> li:hover{
+                &> div{
+                  color: #fff;
+                  background-color: #7293d6;
+                  cursor: pointer;
+                }
+                &> a{
+                  background-color: #7293d6;
+                  cursor: pointer;
+                  color: #fff;
+                }
+              }
+              &> li.has-sub.active{
+                &> div{
+                  background-color: #666;
+                  color: #fff;
+                }
               }
               &> li.mbl-nav-gen{
                 border-top: 1px solid #ccc;

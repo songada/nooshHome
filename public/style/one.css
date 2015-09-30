@@ -96,6 +96,7 @@
   .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li:first-child {
     height: auto;
     padding: 20px;
+    background-color: #fff !important;
   }
   .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li:first-child > .glb-nmh-icon-close {
     background-image: url("/images/icon-close-black.svg");
@@ -109,7 +110,38 @@
   }
   .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li {
     font-size: 16px;
+    text-align: center;
+    position: relative;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li > div {
     padding: 10px 15px;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li > ul {
+    display: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li > ul > li > a {
+    padding: 5px;
+    display: block;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li > ul > li > a:hover {
+    color: #fff;
+    background-color: #7293d6;
+    cursor: pointer;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li:hover > div {
+    color: #fff;
+    background-color: #7293d6;
+    cursor: pointer;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li:hover > a {
+    background-color: #7293d6;
+    cursor: pointer;
+    color: #fff;
+  }
+  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li.has-sub.active > div {
+    background-color: #666;
+    color: #fff;
   }
   .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li.mbl-nav-gen {
     border-top: 1px solid #ccc;
