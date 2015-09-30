@@ -25,6 +25,12 @@
 <script src="/lib/seajs/dist/sea-debug.js"></script>
 <script>
     (function (global) {
+        $(function() {
+            $('.mbl-nav').click(function (e) {
+                $(e.target).parent().children('ul').show("slide", { direction: "right" }, 1000);
+            });
+        });
+
         google.load("visualization", "1", {packages:["corechart"]});
         // Set configuration
         seajs.config({

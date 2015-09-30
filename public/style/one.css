@@ -87,9 +87,6 @@
     font-size: 16px;
     padding: 10px 15px;
   }
-  .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child:hover > ul {
-    display: block;
-  }
   .panel-wrap > .panel > .panel-heading {
     padding: 5px;
   }
