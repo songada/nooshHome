@@ -3,6 +3,7 @@
   .sp-head{
     min-width: auto;
     .glb-header{
+      padding-top: 34px;
       .glb-bc-location{
         padding: 0;
         &> div{
@@ -18,6 +19,9 @@
     .sp-head-top-central{
       border-bottom: 1px solid #ccc;
       height: 35px;
+      position:fixed;
+      z-index: 1;
+      background-color: #fff;
       .glb-nmh-logo{
         display: block;
         height: 35px;
@@ -70,18 +74,39 @@
             }
             &> .mbl-nav-dropdown{
               background-color: #fff;
-              border: 1px solid #ccc;
+              border: none;
               box-sizing: border-box;
-              display: none;
-              height: 100%;
-              left: 0;
+              height: 0;
+              right: 0;
               position: fixed;
               text-align: right;
-              width: 100%;
+              width: 0;
               z-index: 2;
+              overflow: hidden;
+              transition: 0.2s ease 0s;
+              top: 0px;
+              box-shadow: 15px 0 50px 0 rgba(0, 0, 0, 0.4);
+              padding: 0px;
+              &> li:first-child{
+                height: auto;
+                padding: 20px;
+                &> .glb-nmh-icon-close{
+                  background-image: url("/images/icon-close-black.svg");
+                  background-repeat: no-repeat;
+                  height: 35px;
+                  width: 35px;
+                  background-position: 0;
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                }
+              }
               &> li{
                 font-size: 16px;
                 padding: 10px 15px;
+              }
+              &> li.mbl-nav-gen{
+                border-top: 1px solid #ccc;
               }
             }
           }
@@ -130,6 +155,21 @@
         }
       }
     }
+  }
+  .glb-wdgt-task > li > div:first-child {
+    text-align: left;
+    width: 100%;
+  }
+  .glb-wdgt-ct li > div {
+    display: block;
+    padding: 10px 5px;
+    vertical-align: middle;
+  }
+  .glb-wdgt-task > li > div:last-child {
+    padding: 0;
+    position: relative;
+    text-align: right;
+    width: 100%;
   }
 }
 /** End Responsive **/

@@ -27,7 +27,18 @@
     (function (global) {
         $(function() {
             $('.mbl-nav').click(function (e) {
-                $(e.target).parent().children('ul').show("slide", { direction: "right" }, 1000);
+                $(e.target).parent().find('.mbl-nav-dropdown').css({
+                    'padding':'20px',
+                    'width':'100%',
+                    'height':'100%'
+                })
+            });
+            $('.mbl-nav-close').click(function (e) {
+                $(e.target).parent().parent().parent().find('.mbl-nav-dropdown').css({
+                    'padding':'0px',
+                    'width':'0px',
+                    'height':'0px'
+                })
             });
         });
 
