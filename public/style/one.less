@@ -68,6 +68,27 @@
               height: 35px;
               width: 35px;
             }
+            &> .mbl-nav-dropdown{
+              background-color: #fff;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+              display: none;
+              height: 100%;
+              left: 0;
+              position: fixed;
+              text-align: right;
+              width: 100%;
+              z-index: 2;
+              &> li{
+                font-size: 16px;
+                padding: 10px 15px;
+              }
+            }
+          }
+          &> li:last-child:hover{
+            &> ul{
+              display: block;
+            }
           }
         }
       }
@@ -76,14 +97,36 @@
   .panel-wrap{
     &> .panel{
       &> .panel-heading{
+        padding: 5px;
         &> .panel-title{
-          font-size: 14px;
+          font-size: 14px !important;
         }
         &> .nh-panel-setting{
           display: none;
         }
         &> .nh-panel-handler{
           display: none;
+        }
+        &> .glb-wdgt-hd-dropdown{
+          padding: 7px 15px 7px 5px !important;
+          margin-bottom: -10px;
+          margin-right: -5px;
+          margin-top: -10px;
+          &> .glb-carrot{
+            right: 5px;
+            top: 13px !important;
+          }
+          &> .glb-wdgt-dropdown-list{
+            top: 31px !important;
+            left: 0px !important;
+            box-sizing: border-box !important;
+          }
+        }
+      }
+      &> .panel-body{
+        &> .panel-one-third-area{
+          float: none;
+          width: 100%;
         }
       }
     }
