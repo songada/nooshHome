@@ -94,13 +94,14 @@
     padding: 0px;
   }
   .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li:first-child {
-    height: auto;
-    padding: 20px;
+    height: 35px;
+    padding: 0px;
     background-color: #fff !important;
   }
   .sp-head .sp-head-top-central .mbl-menu > ul > li:last-child > .mbl-nav-dropdown > li:first-child > .glb-nmh-icon-close {
     background-image: url("/images/icon-close-black.svg");
     background-repeat: no-repeat;
+    background-color: #fff;
     height: 35px;
     width: 35px;
     background-position: 0;
