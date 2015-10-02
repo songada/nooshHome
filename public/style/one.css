@@ -149,9 +149,12 @@
   }
   .panel-wrap > .panel > .panel-heading {
     padding: 5px;
+    width: 100%;
   }
   .panel-wrap > .panel > .panel-heading > .panel-title {
-    font-size: 14px !important;
+    font-size: 16px !important;
+    display: block !important;
+    padding: 5px;
   }
   .panel-wrap > .panel > .panel-heading > .nh-panel-setting {
     display: none;
@@ -161,9 +164,12 @@
   }
   .panel-wrap > .panel > .panel-heading > .glb-wdgt-hd-dropdown {
     padding: 7px 15px 7px 5px !important;
-    margin-bottom: -10px;
-    margin-right: -5px;
-    margin-top: -10px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    float: none !important;
+    font-size: 13px;
+    margin: 0 !important;
+    width: auto;
   }
   .panel-wrap > .panel > .panel-heading > .glb-wdgt-hd-dropdown > .glb-carrot {
     right: 5px;
